@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Dumisane Michael Luma, Technical Support Specialist specialising in networking, CCTV and electronic security systems.">
+  <title>Dumisane Michael Luma | IT & Network Support</title>
+  <style>
+    :root {
+      --bg: #07131b;
+      --panel: #10232d;
+      --panel2: #0c1c25;
+      --text: #eef6f7;
+      --muted: #a9bbc2;
+      --teal: #20c6b3;
+      --line: rgba(255,255,255,.11);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(1100px, 90%); margin: auto; }
+    header {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(7,19,27,.94); backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+    nav { min-height: 70px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .logo { font-weight: 800; letter-spacing: 1px; font-size: 1.05rem; }
+    .logo span { color: var(--teal); }
+    .navlinks { display: flex; flex-wrap: wrap; gap: 22px; color: var(--muted); font-size: .9rem; }
+    .navlinks a:hover { color: var(--teal); }
+    .hero { padding: 105px 0 95px; background: radial-gradient(circle at 80% 20%, rgba(32,198,179,.14), transparent 34%); }
+    .eyebrow { color: var(--teal); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; font-size: .78rem; }
+    h1 { font-size: clamp(2.6rem, 7vw, 5rem); line-height: 1.08; margin: 17px 0; max-width: 850px; }
+    h1 span { color: var(--teal); }
+    .hero p { color: var(--muted); max-width: 720px; font-size: 1.12rem; }
+    .buttons { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 30px; }
+    .btn { display: inline-block; padding: 12px 20px; border-radius: 6px; font-weight: 700; border: 1px solid var(--teal); }
+    .btn.primary { background: var(--teal); color: #06201f; }
+    .btn.secondary { color: var(--teal); }
+    section { padding: 76px 0; }
+    section:nth-of-type(even) { background: var(--panel2); }
+    .section-title { font-size: clamp(1.8rem, 4vw, 2.5rem); margin-bottom: 12px; }
+    .section-intro { color: var(--muted); max-width: 700px; margin-bottom: 32px; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 24px; }
+    .card h3 { color: var(--teal); margin-bottom: 10px; font-size: 1.12rem; }
+    .card p, .card li { color: var(--muted); font-size: .95rem; }
+    .card ul { padding-left: 18px; }
+    .timeline { display: grid; gap: 20px; }
+    .job { border-left: 3px solid var(--teal); padding: 4px 0 4px 22px; }
+    .job h3 { font-size: 1.2rem; }
+    .job .meta { color: var(--teal); font-size: .9rem; margin: 3px 0 10px; }
+    .job ul { padding-left: 20px; color: var(--muted); }
+    .tags { display: flex; flex-wrap: wrap; gap: 10px; }
+    .tag { border: 1px solid rgba(32,198,179,.35); color: #c9f5ef; background: rgba(32,198,179,.07); padding: 8px 12px; border-radius: 5px; font-size: .9rem; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+    .contact-box { background: var(--panel); border: 1px solid var(--line); padding: 28px; border-radius: 10px; }
+    .contact-box p { color: var(--muted); margin: 8px 0; overflow-wrap: anywhere; }
+    .contact-box a { color: var(--teal); }
+    footer { border-top: 1px solid var(--line); padding: 25px 0; color: var(--muted); text-align: center; font-size: .85rem; }
+    @media (max-width: 760px) {
+      nav { align-items: flex-start; flex-direction: column; padding: 16px 0; }
+      .navlinks { gap: 12px 16px; }
+      .hero { padding: 75px 0; }
+      .grid, .two-col { grid-template-columns: 1fr; }
+      section { padding: 58px 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav aria-label="Main navigation">
+        <a class="logo" href="#home">DUMISANE<span>.</span></a>
+        <div class="navlinks">
+          <a href="#about">About</a><a href="#services">Expertise</a><a href="#experience">Experience</a>
+          <a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="eyebrow">IT Support • Networking • Security Systems</div>
+        <h1>Dumisane Michael <span>Luma</span></h1>
+        <p><strong>Technical Support Specialist</strong> with 5+ years of experience supporting CCTV, networking and electronic security systems. I troubleshoot problems, keep systems running reliably and help clients get the best from their technology.</p>
+        <div class="buttons">
+          <a class="btn primary" href="#contact">Get in touch</a>
+          <a class="btn secondary" href="#experience">View my experience</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="eyebrow">A little about me</div>
+        <h2 class="section-title">Practical support. Reliable solutions.</h2>
+        <p class="section-intro">I am an IT and security systems professional with hands-on experience in technical support, fault finding, system configuration and customer service. I enjoy investigating issues, finding their root cause and helping people use technology with confidence. I am continuing to develop my networking knowledge, with the long-term goal of becoming a Network Engineer.</p>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="eyebrow">What I work with</div>
+        <h2 class="section-title">Areas of expertise</h2>
+        <div class="grid">
+          <article class="card"><h3>IT & Technical Support</h3><p>Remote support, incident handling, fault finding, technical guidance, service reports and SLA-focused resolution.</p></article>
+          <article class="card"><h3>Networking</h3><p>LAN/WAN support, IP addressing, connectivity troubleshooting, network diagnostics and IP camera integration.</p></article>
+          <article class="card"><h3>CCTV & Security</h3><p>Hikvision and Dahua cameras, NVR/DVR configuration, RTSP streaming, alarms and access control systems.</p></article>
+          <article class="card"><h3>System Maintenance</h3><p>Firmware updates, system upgrades, post-installation testing and ongoing system maintenance.</p></article>
+          <article class="card"><h3>Customer Support & Sales</h3><p>Product recommendations, demonstrations, client training, relationship management and technical assistance.</p></article>
+          <article class="card"><h3>Digital Content</h3><p>WordPress content updates, basic HTML/CSS and marketing materials using Canva and Photoshop.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <div class="eyebrow">Career history</div>
+        <h2 class="section-title">Professional experience</h2>
+        <div class="timeline">
+          <article class="job">
+            <h3>Technical Support Specialist</h3>
+            <div class="meta">Secutel Technologies | October 2022 – Present</div>
+            <ul>
+              <li>Provide remote technical support for CCTV and network systems.</li>
+              <li>Troubleshoot IP cameras, NVRs and connectivity issues.</li>
+              <li>Configure and maintain alarm and access control systems.</li>
+              <li>Manage user access and support system security.</li>
+              <li>Resolve incidents within SLA timeframes and provide technical guidance to clients.</li>
+              <li>Complete firmware updates, system upgrades and post-installation testing.</li>
+              <li>Prepare service reports and maintain technical logs.</li>
+            </ul>
+          </article>
+          <article class="job">
+            <h3>Technical Sales & Security Specialist</h3>
+            <div class="meta">Pin Point Security | February 2019 – August 2022</div>
+            <ul>
+              <li>Recommended and sold CCTV, alarm and access control solutions.</li>
+              <li>Installed, maintained and diagnosed electronic security systems.</li>
+              <li>Trained clients and staff on security products.</li>
+              <li>Managed stock, pricing and inventory.</li>
+              <li>Created marketing content using Canva and Photoshop and updated website content using WordPress.</li>
+              <li>Built and maintained strong client relationships.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="eyebrow">Technical toolkit</div>
+        <h2 class="section-title">Skills & technologies</h2>
+        <p class="section-intro">Tools and technologies I have worked with across support, security systems and digital tasks.</p>
+        <div class="tags">
+          <span class="tag">Hikvision</span><span class="tag">Dahua</span><span class="tag">CCTV</span>
+          <span class="tag">NVR / DVR</span><span class="tag">LAN / WAN</span><span class="tag">IP Networking</span>
+          <span class="tag">RTSP</span><span class="tag">Alarm Systems</span><span class="tag">Access Control</span>
+          <span class="tag">Zoho Desk (CRM)</span><span class="tag">Microsoft Dynamics</span><span class="tag">ExpandIT</span>
+          <span class="tag">Hikvision SADP Tool</span><span class="tag">Remote Tunnel</span><span class="tag">Axxon Soft</span>
+          <span class="tag">AnyDesk</span><span class="tag">TeamViewer</span><span class="tag">Microsoft Office</span>
+          <span class="tag">WordPress</span><span class="tag">HTML</span><span class="tag">CSS</span>
+          <span class="tag">C Programming</span><span class="tag">Sage Pastel</span><span class="tag">Basic Linux</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="container">
+        <div class="eyebrow">Learning & development</div>
+        <h2 class="section-title">Education & certifications</h2>
+        <div class="two-col">
+          <div class="card">
+            <h3>Education</h3>
+            <ul>
+              <li>IT Support Services — Rosebank College, 2017</li>
+              <li>Matric — Aha Thuto Secondary School, 2016</li>
+              <li>C Programming Course — WeThinkCode_, 2018</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Certifications & training</h3>
+            <ul>
+              <li>CCNA (200-301) — Simplilearn, 2026</li>
+              <li>Leadership and Management Skills — Alison, 2025</li>
+              <li>Introduction to Cyber Security — Cisco Networking Academy, 2025</li>
+              <li>Introduction to Data Science — Cisco Networking Academy, 2025</li>
+              <li>Dahua CCTV Training — Security Warehouse, 2025</li>
+              <li>ZKTeco Access Control Training — Security Warehouse, 2025</li>
+              <li>CCTV Systems & AutoCAD Layouts — Alison, 2022</li>
+              <li>Paradox Alarm Programming — Spectrum, 2019</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="eyebrow">Let's connect</div>
+        <h2 class="section-title">Have a project or opportunity?</h2>
+        <p class="section-intro">I am open to connecting with professionals and exploring opportunities in IT support, networking and technical operations.</p>
+        <div class="contact-box">
+          <p><strong>Name:</strong> Dumisane Michael Luma</p>
+          <p><strong>Email:</strong> <a href="mailto:dungaluma@gmail.com">dungaluma@gmail.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+27723062328">072 306 2328</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/dumisane-luma-11345a124" target="_blank" rel="noopener">linkedin.com/in/dumisane-luma-11345a124</a></p>
+          <p><strong>Location:</strong> Johannesburg, South Africa</p>
+          <p><strong>Driver's licence:</strong> Code B</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© 2026 Dumisane Michael Luma. Professional portfolio.</div>
+  </footer>
+</body>
+</html>
